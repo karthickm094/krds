@@ -1,9 +1,9 @@
 import React from 'react'
 import './Card.css';
-const Card = ({ card }) => {
+const Card = ({ card, backgroundColor  }) => {
   const { desc, image, logo, title } = card;
   return (
-    <div className="col-12 col-lg-4 card">
+    <div className="col-12 col-lg-4 card" style={{ backgroundColor: backgroundColor }}>
       <div className='d-md-flex gap-5'>
         <div className='card-content'>
           <img className="card-img-logo" src={logo} alt="Card image cap"></img>

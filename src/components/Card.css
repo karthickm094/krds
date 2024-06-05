@@ -1,34 +1,3 @@
-.cards-list .card:nth-child(1),
-.slider .slide:nth-child(1) .card {
-    background-color: #41ca6e;
-}
-
-.cards-list .card:nth-child(2),
-.slider .slide:nth-child(2) .card {
-    background-color: #fab153;
-}
-
-.cards-list .card:nth-child(3),
-.slider .slide:nth-child(3) .card {
-    background-color: #7277d5;
-}
-
-.cards-list .card:nth-child(4),
-.slider .slide:nth-child(4) .card {
-    background-color: #f87d51;
-}
-
-.cards-list .card:nth-child(5),
-.slider .slide:nth-child(5) .card {
-    background-color: #ed5466;
-}
-
-.cards-list .card:nth-child(6),
-.slider .slide:nth-child(6) .card,
-.slider .slide:nth-child(7) .card {
-    background-color: #4ec2e7;
-}
-
 /* Additional styles for Card component */
 .cards-container .card-title,
 .cards-container .card-text {

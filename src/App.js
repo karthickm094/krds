@@ -4,10 +4,11 @@ import Card from "./components/Card";
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import Header from "./components/Header";
-
+import  cartColor from './utils/Helper';
 function App() {
   const [data, setData] = useState({ logo: "", features: [] });
   const [loader, setLoader] = useState(true);
+  console.log(cartColor);
   useEffect(() => {
     const fetchCsvData = async () => {
       try {
@@ -42,7 +43,7 @@ function App() {
           <div className="cards-list cards-container d-none d-lg-block">
 
             {features.map((card, index) => (
-              <Card key={index} card={card} />
+              <Card key={index} card={card} backgroundColor={cartColor[index % cartColor.length]} />
             ))}
 
           </div>
@@ -50,7 +51,7 @@ function App() {
             <Carousel showThumbs={false} infiniteLoop useKeyboardArrows>
               {features.map((card, index) => (
                 <div key={index} className="h-100">
-                  <Card card={card} />
+                  <Card card={card} backgroundColor={cartColor[index % cartColor.length]} />
                 </div>
               ))}
             </Carousel>
