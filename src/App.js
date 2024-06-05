@@ -8,7 +8,6 @@ import  cartColor from './utils/Helper';
 function App() {
   const [data, setData] = useState({ logo: "", features: [] });
   const [loader, setLoader] = useState(true);
-  console.log(cartColor);
   useEffect(() => {
     const fetchCsvData = async () => {
       try {
